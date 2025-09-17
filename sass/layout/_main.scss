@@ -1,0 +1,145 @@
+
+.hero {
+            @include flex(center, center, center, 1.5rem, row, wrap);
+            margin: 4rem 0 2rem 0;
+            position: relative;
+    
+            .heroConteiner {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: row;
+                gap: 1rem;
+                width: 100%;
+                margin: 0 0 4rem 0;
+                
+                .banner {
+                    position: absolute;
+                    width: 100vw;
+                    margin-top: 29rem;
+                    z-index: -1;
+                }
+                
+                .heroImage {
+                    z-index: -2;
+                }
+                .heroContent {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: center;
+                    gap: 1rem;
+                    max-width: 45%;
+    
+                    h1 {
+                        text-align: left;
+                        margin-bottom: .5rem;
+                        line-height: 115%
+                    }
+                    p {
+                        text-align: left;
+                        margin: 0rem 0 1rem 0;
+                        max-width: 55%;
+                }
+            }
+        }
+    }
+
+    // ABOUT //
+
+
+    .about {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 4rem 0 4rem 0rem;
+        height: 100vh;
+
+        .wrpr {
+            display: inline-block;
+            width: 100%;
+            z-index: 2;
+            
+            transition: transform 0.3s ease-in-out;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+            
+
+
+            img {
+                position: absolute;
+                width: 20%;
+                margin-top: 0rem;
+                z-index: -1;
+                
+                animation: moveX 4s linear infinite;
+                transition: transform 0.85s ease-in-out;
+                
+            }
+            @keyframes moveX {
+            from {
+            transform: translateX(-30vw); 
+            }
+            to {
+            transform: translateX(550%); 
+            }
+    }
+        }
+        
+        h1 {
+            @extend h1;
+            text-align: center;
+            margin: 0 0 1rem 0;
+            width: 80%;
+        }
+
+        .content {
+            align-items: center;
+            text-align: center;
+            margin: 0 0 2rem 0;
+            max-width: 40%;
+            p {
+                @extend p;
+                text-align: center;
+                margin: 0rem 0 1.5rem 0;
+                max-width: 100%;
+            }
+        }
+
+    }
+    
+
+    // ARTICLE //
+    
+    .article {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        padding: 0px 96px;
+        margin: 0 0 8rem 0;
+    
+        .articleImage {
+            padding: 4rem 0 0 0rem;
+        }
+    
+        .articleConteiner {
+    
+            h1 {
+                text-align: left;
+                margin: 0 0 1rem 0;
+                max-width: 95%;
+            }
+    
+            p {
+                text-align: left;
+                margin: 0rem 0 2rem 0;
+                max-width: 95%;
+            }
+        }
+    }

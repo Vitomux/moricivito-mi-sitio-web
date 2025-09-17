@@ -1,0 +1,1063 @@
+/*     UTILITIES   */
+/*   BASE   */
+/* RESET DE ESTILOS */
+@import url("https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Lexend:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Lexend:wght@300&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 96px;
+  overflow: hidden;
+}
+
+li {
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Lexend", sans-serif;
+  background-color: #f8f8f8;
+}
+
+a, footer .footerNavbar a {
+  text-decoration: none;
+  font-family: "Lexend";
+  font-size: 0.8rem;
+  font-weight: normal;
+  color: #000000;
+}
+a:hover, footer .footerNavbar a:hover {
+  color: #AD0BD6;
+}
+
+p, .carreras .content p, .about .carreras .content p, .carreras .about .content p, .card .carreras .content p, .carreras .content .card p, .card .about .carreras .content p, .carreras .card .about .content p, .about .carreras .content .card p, .carreras .about .content .card p, .card .about .carreras .content .card p, .carreras .card .about .content .card p, .contactContainer .contacInfo .carreras .content p, .carreras .content .contactContainer .contacInfo p, .about .carreras .content .contactContainer .contacInfo p, .carreras .about .content .contactContainer .contacInfo p, .contactContainer .contacInfo .about .carreras .content p, .carreras .contactContainer .contacInfo .about .content p, .card .contactContainer .contacInfo .carreras .content p, .carreras .content .card .contactContainer .contacInfo p, .contactContainer .contacInfo .card .carreras .content p, .carreras .content .contactContainer .contacInfo .card p, .card .about .carreras .content .contactContainer .contacInfo p, .carreras .card .about .content .contactContainer .contacInfo p, .contactContainer .contacInfo .card .about .carreras .content p, .carreras .contactContainer .contacInfo .card .about .content p, .about .carreras .content .card .contactContainer .contacInfo p, .carreras .about .content .card .contactContainer .contacInfo p, .contactContainer .contacInfo .about .carreras .content .card p, .carreras .contactContainer .contacInfo .about .content .card p, .card .about .carreras .content .card .contactContainer .contacInfo p, .carreras .card .about .content .card .contactContainer .contacInfo p, .contactContainer .contacInfo .card .about .carreras .content .card p, .carreras .contactContainer .contacInfo .card .about .content .card p, .contactContainer .contacInfo p, .contactContainer .contacInfo .carreras .content p, .carreras .content .contactContainer .contacInfo p, .contactContainer .contacInfo .about .carreras .content p, .about .carreras .content .contactContainer .contacInfo p, .contactContainer .contacInfo .carreras .about .content p, .carreras .about .content .contactContainer .contacInfo p, .contactContainer .contacInfo .card .carreras .content p, .card .carreras .content .contactContainer .contacInfo p, .contactContainer .contacInfo .carreras .content .card p, .carreras .content .card .contactContainer .contacInfo p, .contactContainer .contacInfo .card .about .carreras .content p, .card .about .carreras .content .contactContainer .contacInfo p, .contactContainer .contacInfo .carreras .card .about .content p, .carreras .card .about .content .contactContainer .contacInfo p, .contactContainer .contacInfo .about .carreras .content .card p, .about .carreras .content .card .contactContainer .contacInfo p, .contactContainer .contacInfo .carreras .about .content .card p, .carreras .about .content .card .contactContainer .contacInfo p, .contactContainer .contacInfo .card .about .carreras .content .card p, .card .about .carreras .content .card .contactContainer .contacInfo p, .contactContainer .contacInfo .carreras .card .about .content .card p, .carreras .card .about .content .card .contactContainer .contacInfo p, .contactContainer .contacInfo .carreras .content p, .carreras .content .contactContainer .contacInfo p, .about .carreras .content .contactContainer .contacInfo p, .carreras .about .content .contactContainer .contacInfo p, .contactContainer .contacInfo .about .carreras .content p, .carreras .contactContainer .contacInfo .about .content p, .card .contactContainer .contacInfo .carreras .content p, .carreras .content .card .contactContainer .contacInfo p, .contactContainer .contacInfo .card .carreras .content p, .carreras .content .contactContainer .contacInfo .card p, .card .about .carreras .content .contactContainer .contacInfo p, .carreras .card .about .content .contactContainer .contacInfo p, .contactContainer .contacInfo .card .about .carreras .content p, .carreras .contactContainer .contacInfo .card .about .content p, .about .carreras .content .card .contactContainer .contacInfo p, .carreras .about .content .card .contactContainer .contacInfo p, .contactContainer .contacInfo .about .carreras .content .card p, .carreras .contactContainer .contacInfo .about .content .card p, .card .about .carreras .content .card .contactContainer .contacInfo p, .carreras .card .about .content .card .contactContainer .contacInfo p, .contactContainer .contacInfo .card .about .carreras .content .card p, .carreras .contactContainer .contacInfo .card .about .content .card p, .card p, .card .carreras .content p, .carreras .content .card p, .card .about .carreras .content p, .about .carreras .content .card p, .card .carreras .about .content p, .carreras .about .content .card p, .card .carreras .content p, .carreras .content .card p, .card .about .carreras .content p, .carreras .card .about .content p, .about .carreras .content .card p, .carreras .about .content .card p, .card .about .carreras .content .card p, .carreras .card .about .content .card p, .card .contactContainer .contacInfo .carreras .content p, .contactContainer .contacInfo .carreras .content .card p, .card .carreras .content .contactContainer .contacInfo p, .carreras .content .contactContainer .contacInfo .card p, .card .about .carreras .content .contactContainer .contacInfo p, .about .carreras .content .contactContainer .contacInfo .card p, .card .carreras .about .content .contactContainer .contacInfo p, .carreras .about .content .contactContainer .contacInfo .card p, .card .contactContainer .contacInfo .about .carreras .content p, .contactContainer .contacInfo .about .carreras .content .card p, .card .carreras .contactContainer .contacInfo .about .content p, .carreras .contactContainer .contacInfo .about .content .card p, .card .contactContainer .contacInfo .carreras .content p, .carreras .content .card .contactContainer .contacInfo p, .contactContainer .contacInfo .card .carreras .content p, .carreras .content .contactContainer .contacInfo .card p, .card .about .carreras .content .contactContainer .contacInfo p, .carreras .card .about .content .contactContainer .contacInfo p, .contactContainer .contacInfo .card .about .carreras .content p, .carreras .contactContainer .contacInfo .card .about .content p, .about .carreras .content .card .contactContainer .contacInfo p, .carreras .about .content .card .contactContainer .contacInfo p, .contactContainer .contacInfo .about .carreras .content .card p, .carreras .contactContainer .contacInfo .about .content .card p, .card .about .carreras .content .card .contactContainer .contacInfo p, .carreras .card .about .content .card .contactContainer .contacInfo p, .contactContainer .contacInfo .card .about .carreras .content .card p, .carreras .contactContainer .contacInfo .card .about .content .card p, .about .content p, .about .carreras .content p, .carreras .about .content p, .about .carreras .content p, .carreras .about .content p, .about .card .carreras .content p, .card .carreras .about .content p, .about .carreras .content .card p, .carreras .about .content .card p, .card .about .carreras .content p, .carreras .card .about .content p, .about .carreras .content .card p, .carreras .about .content .card p, .card .about .carreras .content .card p, .carreras .card .about .content .card p, .about .contactContainer .contacInfo .carreras .content p, .contactContainer .contacInfo .carreras .about .content p, .about .carreras .content .contactContainer .contacInfo p, .carreras .about .content .contactContainer .contacInfo p, .about .carreras .content .contactContainer .contacInfo p, .carreras .about .content .contactContainer .contacInfo p, .contactContainer .contacInfo .about .carreras .content p, .carreras .contactContainer .contacInfo .about .content p, .about .card .contactContainer .contacInfo .carreras .content p, .card .contactContainer .contacInfo .carreras .about .content p, .about .carreras .content .card .contactContainer .contacInfo p, .carreras .about .content .card .contactContainer .contacInfo p, .about .contactContainer .contacInfo .card .carreras .content p, .contactContainer .contacInfo .card .carreras .about .content p, .about .carreras .content .contactContainer .contacInfo .card p, .carreras .about .content .contactContainer .contacInfo .card p, .card .about .carreras .content .contactContainer .contacInfo p, .carreras .card .about .content .contactContainer .contacInfo p, .contactContainer .contacInfo .card .about .carreras .content p, .carreras .contactContainer .contacInfo .card .about .content p, .about .carreras .content .card .contactContainer .contacInfo p, .carreras .about .content .card .contactContainer .contacInfo p, .contactContainer .contacInfo .about .carreras .content .card p, .carreras .contactContainer .contacInfo .about .content .card p, .card .about .carreras .content .card .contactContainer .contacInfo p, .carreras .card .about .content .card .contactContainer .contacInfo p, .contactContainer .contacInfo .card .about .carreras .content .card p, .carreras .contactContainer .contacInfo .card .about .content .card p {
+  font-family: "Lexend";
+  font-size: 1.25rem;
+  font-weight: normal;
+  color: #000000;
+  line-height: 145%;
+  margin-bottom: 1rem;
+}
+
+h1, .aboutArticle .academy h1, .aboutArticle .academy .aboutUs, .aboutUs, .about .aboutUs, .about h1 {
+  font-family: "Host Grotesk";
+  font-size: 4.4rem;
+  font-weight: bold;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 1%;
+  margin-top: 0px;
+  width: 90%;
+}
+
+h2, .carreras .content h2, .contactContainer .contacInfo h2 {
+  font-family: "Host Grotesk";
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 0rem;
+  text-align: left;
+}
+
+h3 {
+  font-family: "Host Grotesk";
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 1rem;
+}
+
+/*   LAYOUT   */
+.mainHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  gap: flex-end;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background-color: #f8f8f8;
+  width: 100%;
+  padding: 0.5rem 2rem;
+  z-index: 20;
+  position: fixed;
+  box-shadow: 0px 4px 4px rgba(71, 69, 71, 0.248);
+}
+.mainHeader .navbarContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: auto;
+  gap: auto;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.mainHeader .navbarContainer .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: right;
+  text-align: center;
+  gap: 2rem;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding-right: 0px;
+  width: 100%;
+}
+.mainHeader .menu {
+  display: none;
+}
+@media (max-width: 768px) {
+  .mainHeader button, .mainHeader .buttonSecondary {
+    display: none;
+  }
+  .mainHeader .menu {
+    display: block;
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+  }
+  .mainHeader .navbarContainer .navbar {
+    display: none;
+  }
+}
+
+@media (max-width: 426px) {
+  .mainHeader {
+    max-width: 100vw;
+  }
+  .navbarContainer .menu {
+    display: block;
+    width: 2rem;
+    cursor: pointer;
+  }
+  .navbarContainer .navbar {
+    display: none;
+  }
+}
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1.5rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 4rem 0 2rem 0;
+  position: relative;
+}
+.hero .heroConteiner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 1rem;
+  width: 100%;
+  margin: 0 0 4rem 0;
+}
+.hero .heroConteiner .banner {
+  position: absolute;
+  width: 100vw;
+  margin-top: 29rem;
+  z-index: -1;
+}
+.hero .heroConteiner .heroImage {
+  z-index: -2;
+}
+.hero .heroConteiner .heroContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem;
+  max-width: 45%;
+}
+.hero .heroConteiner .heroContent h1, .hero .heroConteiner .heroContent .aboutUs {
+  text-align: left;
+  margin-bottom: 0.5rem;
+  line-height: 115%;
+}
+.hero .heroConteiner .heroContent p {
+  text-align: left;
+  margin: 0rem 0 1rem 0;
+  max-width: 55%;
+}
+
+.about {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 4rem 0 4rem 0rem;
+  height: 100vh;
+}
+.about .wrpr {
+  display: inline-block;
+  width: 100%;
+  z-index: 2;
+  transition: transform 0.3s ease-in-out;
+}
+.about .wrpr:hover {
+  transform: scale(1.1);
+}
+.about .wrpr img {
+  position: absolute;
+  width: 20%;
+  margin-top: 0rem;
+  z-index: -1;
+  animation: moveX 4s linear infinite;
+  transition: transform 0.85s ease-in-out;
+}
+@keyframes moveX {
+  from {
+    transform: translateX(-30vw);
+  }
+  to {
+    transform: translateX(550%);
+  }
+}
+.about h1, .about .aboutArticle .academy h1, .aboutArticle .academy .about h1, .about .aboutArticle .academy .aboutUs, .aboutArticle .academy .about .aboutUs, .about .aboutUs {
+  text-align: center;
+  margin: 0 0 1rem 0;
+  width: 80%;
+}
+.about .content {
+  align-items: center;
+  text-align: center;
+  margin: 0 0 2rem 0;
+  max-width: 40%;
+}
+.about .content p {
+  text-align: center;
+  margin: 0rem 0 1.5rem 0;
+  max-width: 100%;
+}
+
+.article {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0px 96px;
+  margin: 0 0 8rem 0;
+}
+.article .articleImage {
+  padding: 4rem 0 0 0rem;
+}
+.article .articleConteiner h1, .article .articleConteiner .aboutUs {
+  text-align: left;
+  margin: 0 0 1rem 0;
+  max-width: 95%;
+}
+.article .articleConteiner p {
+  text-align: left;
+  margin: 0rem 0 2rem 0;
+  max-width: 95%;
+}
+
+/*   COMPONENTS   */
+button, .buttonSecondary {
+  background-color: #AD0BD6;
+  color: #f8f8f8;
+  font-family: "lexend", sans-serif;
+  border-color: #AD0BD6;
+  border-radius: 16px;
+  padding: 8px 16px;
+  width: 185px;
+}
+button:hover, .buttonSecondary:hover {
+  background-color: #f8ec51;
+  color: #AD0BD6;
+  border: 2px solid #AD0BD6;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+button a, button footer .footerNavbar a, footer .footerNavbar button a, .buttonSecondary a, .buttonSecondary footer .footerNavbar a, footer .footerNavbar .buttonSecondary a {
+  font-family: "Lexend";
+  font-size: 0.8rem;
+  font-weight: medium;
+  color: #f8f8f8;
+  text-decoration: none;
+}
+
+.buttonSecondary {
+  background-color: #f8f8f8;
+  color: #AD0BD6;
+}
+
+@media (max-width: 321px) {
+  button, .buttonSecondary {
+    background-color: #AD0BD6;
+    color: #f8f8f8;
+    font-family: "lexend", sans-serif;
+    border-color: #AD0BD6;
+    border-radius: 0px;
+    padding: 8px 12px;
+    width: 13rem;
+  }
+  .buttonSecondary {
+    background-color: #f8f8f8;
+    color: #AD0BD6;
+  }
+}
+form {
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  text-align: left;
+  gap: 1.5rem;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin: 2rem 0 -4rem 0;
+  padding: 0;
+  width: 100%;
+}
+form label {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  text-align: left;
+  gap: 0.5rem;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+form input, form textarea {
+  width: 100%;
+  height: 2rem;
+}
+form .buttonPrimary {
+  width: 100%;
+  height: 2.5rem;
+  margin-top: 1rem;
+  border-radius: 0px;
+}
+
+@media (max-width: 768px) {
+  form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 2rem 0 4rem 0;
+    padding: 0;
+    width: 100%;
+  }
+  form label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  form input, form textarea {
+    width: 100%;
+    height: 2rem;
+  }
+  form .buttonPrimary {
+    width: 100%;
+    height: 2.5rem;
+    margin-top: 1rem;
+    border-radius: 0px;
+  }
+}
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  border-radius: 16px;
+  max-width: 22.75rem;
+  max-height: 22.6rem;
+  margin: 2rem 0 0 0;
+}
+.card p, .card .carreras .content p, .carreras .content .card p, .card .about .carreras .content p, .about .carreras .content .card p, .card .carreras .about .content p, .carreras .about .content .card p, .card .carreras .content p, .carreras .content .card p, .card .about .carreras .content p, .carreras .card .about .content p, .about .carreras .content .card p, .carreras .about .content .card p, .card .about .carreras .content .card p, .carreras .card .about .content .card p, .card .contactContainer .contacInfo .carreras .content p, .contactContainer .contacInfo .carreras .content .card p, .card .carreras .content .contactContainer .contacInfo p, .carreras .content .contactContainer .contacInfo .card p, .card .about .carreras .content .contactContainer .contacInfo p, .about .carreras .content .contactContainer .contacInfo .card p, .card .carreras .about .content .contactContainer .contacInfo p, .carreras .about .content .contactContainer .contacInfo .card p, .card .contactContainer .contacInfo .about .carreras .content p, .contactContainer .contacInfo .about .carreras .content .card p, .card .carreras .contactContainer .contacInfo .about .content p, .carreras .contactContainer .contacInfo .about .content .card p, .card .contactContainer .contacInfo .carreras .content p, .carreras .content .card .contactContainer .contacInfo p, .contactContainer .contacInfo .card .carreras .content p, .carreras .content .contactContainer .contacInfo .card p, .card .about .carreras .content .contactContainer .contacInfo p, .carreras .card .about .content .contactContainer .contacInfo p, .contactContainer .contacInfo .card .about .carreras .content p, .carreras .contactContainer .contacInfo .card .about .content p, .about .carreras .content .card .contactContainer .contacInfo p, .carreras .about .content .card .contactContainer .contacInfo p, .contactContainer .contacInfo .about .carreras .content .card p, .carreras .contactContainer .contacInfo .about .content .card p, .card .about .carreras .content .card .contactContainer .contacInfo p, .carreras .card .about .content .card .contactContainer .contacInfo p, .contactContainer .contacInfo .card .about .carreras .content .card p, .carreras .contactContainer .contacInfo .card .about .content .card p, .card .contactContainer .contacInfo p, .card .contactContainer .contacInfo .carreras .content p, .carreras .content .card .contactContainer .contacInfo p, .card .contactContainer .contacInfo .about .carreras .content p, .about .carreras .content .card .contactContainer .contacInfo p, .card .contactContainer .contacInfo .carreras .about .content p, .carreras .about .content .card .contactContainer .contacInfo p, .card .contactContainer .contacInfo .carreras .content p, .card .carreras .content .contactContainer .contacInfo p, .carreras .content .card .contactContainer .contacInfo p, .card .contactContainer .contacInfo .about .carreras .content p, .card .about .carreras .content .contactContainer .contacInfo p, .carreras .card .contactContainer .contacInfo .about .content p, .carreras .card .about .content .contactContainer .contacInfo p, .about .carreras .content .card .contactContainer .contacInfo p, .carreras .about .content .card .contactContainer .contacInfo p, .card .contactContainer .contacInfo .about .carreras .content .card p, .card .about .carreras .content .card .contactContainer .contacInfo p, .carreras .card .contactContainer .contacInfo .about .content .card p, .carreras .card .about .content .card .contactContainer .contacInfo p, .card .contactContainer .contacInfo .carreras .content p, .card .carreras .content .contactContainer .contacInfo p, .carreras .content .card .contactContainer .contacInfo p, .card .about .carreras .content .contactContainer .contacInfo p, .about .carreras .content .card .contactContainer .contacInfo p, .card .carreras .about .content .contactContainer .contacInfo p, .carreras .about .content .card .contactContainer .contacInfo p, .card .contactContainer .contacInfo .about .carreras .content p, .card .carreras .contactContainer .contacInfo .about .content p, .carreras .card .contactContainer .contacInfo .about .content p, .card .contactContainer .contacInfo .carreras .content p, .carreras .content .card .contactContainer .contacInfo p, .card .contactContainer .contacInfo .card .carreras .content p, .card .carreras .content .contactContainer .contacInfo .card p, .carreras .content .card .contactContainer .contacInfo .card p, .card .about .carreras .content .contactContainer .contacInfo p, .carreras .card .about .content .contactContainer .contacInfo p, .card .contactContainer .contacInfo .card .about .carreras .content p, .card .carreras .contactContainer .contacInfo .card .about .content p, .carreras .card .contactContainer .contacInfo .card .about .content p, .about .carreras .content .card .contactContainer .contacInfo p, .carreras .about .content .card .contactContainer .contacInfo p, .card .contactContainer .contacInfo .about .carreras .content .card p, .card .carreras .contactContainer .contacInfo .about .content .card p, .carreras .card .contactContainer .contacInfo .about .content .card p, .card .about .carreras .content .card .contactContainer .contacInfo p, .carreras .card .about .content .card .contactContainer .contacInfo p, .card .contactContainer .contacInfo .card .about .carreras .content .card p, .card .carreras .contactContainer .contacInfo .card .about .content .card p, .carreras .card .contactContainer .contacInfo .card .about .content .card p, .contactContainer .contacInfo .card p, .contactContainer .contacInfo .card .carreras .content p, .carreras .content .contactContainer .contacInfo .card p, .contactContainer .contacInfo .card .about .carreras .content p, .about .carreras .content .contactContainer .contacInfo .card p, .contactContainer .contacInfo .card .carreras .about .content p, .carreras .about .content .contactContainer .contacInfo .card p, .contactContainer .contacInfo .card .carreras .content p, .contactContainer .contacInfo .carreras .content .card p, .carreras .content .contactContainer .contacInfo .card p, .contactContainer .contacInfo .card .about .carreras .content p, .contactContainer .contacInfo .carreras .card .about .content p, .carreras .contactContainer .contacInfo .card .about .content p, .contactContainer .contacInfo .about .carreras .content .card p, .about .carreras .content .contactContainer .contacInfo .card p, .contactContainer .contacInfo .carreras .about .content .card p, .carreras .about .content .contactContainer .contacInfo .card p, .contactContainer .contacInfo .card .about .carreras .content .card p, .contactContainer .contacInfo .carreras .card .about .content .card p, .carreras .contactContainer .contacInfo .card .about .content .card p, .contactContainer .contacInfo .card .carreras .content p, .contactContainer .contacInfo .carreras .content .card p, .carreras .content .contactContainer .contacInfo .card p, .about .carreras .content .contactContainer .contacInfo .card p, .carreras .about .content .contactContainer .contacInfo .card p, .contactContainer .contacInfo .card .about .carreras .content p, .contactContainer .contacInfo .about .carreras .content .card p, .carreras .contactContainer .contacInfo .card .about .content p, .carreras .contactContainer .contacInfo .about .content .card p, .card .contactContainer .contacInfo .card .carreras .content p, .card .contactContainer .contacInfo .carreras .content .card p, .carreras .content .card .contactContainer .contacInfo .card p, .contactContainer .contacInfo .card .carreras .content p, .carreras .content .contactContainer .contacInfo .card p, .card .about .carreras .content .contactContainer .contacInfo .card p, .carreras .card .about .content .contactContainer .contacInfo .card p, .contactContainer .contacInfo .card .about .carreras .content p, .carreras .contactContainer .contacInfo .card .about .content p, .about .carreras .content .card .contactContainer .contacInfo .card p, .carreras .about .content .card .contactContainer .contacInfo .card p, .contactContainer .contacInfo .about .carreras .content .card p, .carreras .contactContainer .contacInfo .about .content .card p, .card .about .carreras .content .card .contactContainer .contacInfo .card p, .carreras .card .about .content .card .contactContainer .contacInfo .card p, .contactContainer .contacInfo .card .about .carreras .content .card p, .carreras .contactContainer .contacInfo .card .about .content .card p, .card .about .content p, .card .about .carreras .content p, .carreras .card .about .content p, .card .about .carreras .content p, .card .carreras .about .content p, .carreras .card .about .content p, .card .about .carreras .content p, .card .carreras .about .content p, .card .about .carreras .content .card p, .carreras .card .about .content .card p, .card .about .carreras .content p, .carreras .card .about .content p, .card .about .carreras .content .card p, .card .carreras .about .content .card p, .carreras .card .about .content .card p, .card .about .carreras .content .card p, .carreras .card .about .content .card p, .card .about .contactContainer .contacInfo .carreras .content p, .contactContainer .contacInfo .carreras .card .about .content p, .card .about .carreras .content .contactContainer .contacInfo p, .carreras .card .about .content .contactContainer .contacInfo p, .card .about .carreras .content .contactContainer .contacInfo p, .card .carreras .about .content .contactContainer .contacInfo p, .carreras .card .about .content .contactContainer .contacInfo p, .card .contactContainer .contacInfo .about .carreras .content p, .contactContainer .contacInfo .card .about .carreras .content p, .card .carreras .contactContainer .contacInfo .about .content p, .carreras .contactContainer .contacInfo .card .about .content p, .card .about .contactContainer .contacInfo .carreras .content p, .card .contactContainer .contacInfo .carreras .about .content p, .card .about .carreras .content .card .contactContainer .contacInfo p, .carreras .card .about .content .card .contactContainer .contacInfo p, .contactContainer .contacInfo .card .about .carreras .content p, .contactContainer .contacInfo .card .carreras .about .content p, .card .about .carreras .content .contactContainer .contacInfo .card p, .carreras .card .about .content .contactContainer .contacInfo .card p, .card .about .carreras .content .contactContainer .contacInfo p, .carreras .card .about .content .contactContainer .contacInfo p, .contactContainer .contacInfo .card .about .carreras .content p, .carreras .contactContainer .contacInfo .card .about .content p, .card .about .carreras .content .card .contactContainer .contacInfo p, .card .carreras .about .content .card .contactContainer .contacInfo p, .carreras .card .about .content .card .contactContainer .contacInfo p, .card .contactContainer .contacInfo .about .carreras .content .card p, .contactContainer .contacInfo .card .about .carreras .content .card p, .card .carreras .contactContainer .contacInfo .about .content .card p, .carreras .contactContainer .contacInfo .card .about .content .card p, .card .about .carreras .content .card .contactContainer .contacInfo p, .carreras .card .about .content .card .contactContainer .contacInfo p, .contactContainer .contacInfo .card .about .carreras .content .card p, .carreras .contactContainer .contacInfo .card .about .content .card p, .about .content .card p, .about .carreras .content .card p, .carreras .about .content .card p, .about .carreras .content .card p, .carreras .about .content .card p, .about .content .card .carreras .content p, .about .carreras .content .card p, .carreras .about .content .card p, .card .about .carreras .content .card p, .carreras .card .about .content .card p, .about .carreras .content .card p, .carreras .about .content .card p, .card .about .carreras .content .card p, .carreras .card .about .content .card p, .about .contactContainer .contacInfo .carreras .content .card p, .contactContainer .contacInfo .carreras .about .content .card p, .about .carreras .content .card .contactContainer .contacInfo p, .carreras .about .content .card .contactContainer .contacInfo p, .about .carreras .content .contactContainer .contacInfo .card p, .carreras .about .content .contactContainer .contacInfo .card p, .about .carreras .content .card .contactContainer .contacInfo p, .about .carreras .content .contactContainer .contacInfo .card p, .carreras .about .content .card .contactContainer .contacInfo p, .carreras .about .content .contactContainer .contacInfo .card p, .contactContainer .contacInfo .about .carreras .content .card p, .carreras .contactContainer .contacInfo .about .content .card p, .about .content .card .contactContainer .contacInfo .carreras .content p, .about .carreras .content .card .contactContainer .contacInfo p, .carreras .about .content .card .contactContainer .contacInfo p, .about .content .contactContainer .contacInfo .card .carreras .content p, .contactContainer .contacInfo .about .content .card .carreras .content p, .about .carreras .content .contactContainer .contacInfo .card p, .carreras .about .content .contactContainer .contacInfo .card p, .card .about .carreras .content .card .contactContainer .contacInfo p, .card .about .carreras .content .contactContainer .contacInfo .card p, .carreras .card .about .content .card .contactContainer .contacInfo p, .carreras .card .about .content .contactContainer .contacInfo .card p, .contactContainer .contacInfo .card .about .carreras .content .card p, .carreras .contactContainer .contacInfo .card .about .content .card p, .about .carreras .content .card .contactContainer .contacInfo p, .carreras .about .content .card .contactContainer .contacInfo p, .contactContainer .contacInfo .about .carreras .content .card p, .carreras .contactContainer .contacInfo .about .content .card p, .card .about .carreras .content .card .contactContainer .contacInfo p, .carreras .card .about .content .card .contactContainer .contacInfo p, .contactContainer .contacInfo .card .about .carreras .content .card p, .carreras .contactContainer .contacInfo .card .about .content .card p {
+  text-align: center;
+  margin: 0rem 1rem 1rem 1rem;
+  max-width: 90%;
+}
+.card:hover {
+  border: 0.5px oklch(88.911% 0.00329 198.79deg) solid;
+  box-shadow: 1px 1px 20px 1px rgba(211, 104, 223, 0.5529411765);
+  transition: 0.2s;
+}
+
+@media (max-width: 768px) {
+  .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    border-radius: 16px;
+    max-width: 16rem;
+    max-height: 16rem;
+    margin: 2rem 0 0 0;
+  }
+  .card p, .card .carreras .content p, .carreras .content .card p, .card .about .carreras .content p, .about .carreras .content .card p, .card .carreras .about .content p, .carreras .about .content .card p, .card .carreras .content p, .carreras .content .card p, .card .about .carreras .content p, .carreras .card .about .content p, .about .carreras .content .card p, .carreras .about .content .card p, .card .about .carreras .content .card p, .carreras .card .about .content .card p, .card .contactContainer .contacInfo .carreras .content p, .contactContainer .contacInfo .carreras .content .card p, .card .carreras .content .contactContainer .contacInfo p, .carreras .content .contactContainer .contacInfo .card p, .card .about .carreras .content .contactContainer .contacInfo p, .about .carreras .content .contactContainer .contacInfo .card p, .card .carreras .about .content .contactContainer .contacInfo p, .carreras .about .content .contactContainer .contacInfo .card p, .card .contactContainer .contacInfo .about .carreras .content p, .contactContainer .contacInfo .about .carreras .content .card p, .card .carreras .contactContainer .contacInfo .about .content p, .carreras .contactContainer .contacInfo .about .content .card p, .card .contactContainer .contacInfo .carreras .content p, .carreras .content .card .contactContainer .contacInfo p, .contactContainer .contacInfo .card .carreras .content p, .carreras .content .contactContainer .contacInfo .card p, .card .about .carreras .content .contactContainer .contacInfo p, .carreras .card .about .content .contactContainer .contacInfo p, .contactContainer .contacInfo .card .about .carreras .content p, .carreras .contactContainer .contacInfo .card .about .content p, .about .carreras .content .card .contactContainer .contacInfo p, .carreras .about .content .card .contactContainer .contacInfo p, .contactContainer .contacInfo .about .carreras .content .card p, .carreras .contactContainer .contacInfo .about .content .card p, .card .about .carreras .content .card .contactContainer .contacInfo p, .carreras .card .about .content .card .contactContainer .contacInfo p, .contactContainer .contacInfo .card .about .carreras .content .card p, .carreras .contactContainer .contacInfo .card .about .content .card p, .card .contactContainer .contacInfo p, .card .contactContainer .contacInfo .carreras .content p, .carreras .content .card .contactContainer .contacInfo p, .card .contactContainer .contacInfo .about .carreras .content p, .about .carreras .content .card .contactContainer .contacInfo p, .card .contactContainer .contacInfo .carreras .about .content p, .carreras .about .content .card .contactContainer .contacInfo p, .card .contactContainer .contacInfo .carreras .content p, .card .carreras .content .contactContainer .contacInfo p, .carreras .content .card .contactContainer .contacInfo p, .card .contactContainer .contacInfo .about .carreras .content p, .card .about .carreras .content .contactContainer .contacInfo p, .carreras .card .contactContainer .contacInfo .about .content p, .carreras .card .about .content .contactContainer .contacInfo p, .about .carreras .content .card .contactContainer .contacInfo p, .carreras .about .content .card .contactContainer .contacInfo p, .card .contactContainer .contacInfo .about .carreras .content .card p, .card .about .carreras .content .card .contactContainer .contacInfo p, .carreras .card .contactContainer .contacInfo .about .content .card p, .carreras .card .about .content .card .contactContainer .contacInfo p, .card .contactContainer .contacInfo .carreras .content p, .card .carreras .content .contactContainer .contacInfo p, .carreras .content .card .contactContainer .contacInfo p, .card .about .carreras .content .contactContainer .contacInfo p, .about .carreras .content .card .contactContainer .contacInfo p, .card .carreras .about .content .contactContainer .contacInfo p, .carreras .about .content .card .contactContainer .contacInfo p, .card .contactContainer .contacInfo .about .carreras .content p, .card .carreras .contactContainer .contacInfo .about .content p, .carreras .card .contactContainer .contacInfo .about .content p, .card .contactContainer .contacInfo .carreras .content p, .carreras .content .card .contactContainer .contacInfo p, .card .contactContainer .contacInfo .card .carreras .content p, .card .carreras .content .contactContainer .contacInfo .card p, .carreras .content .card .contactContainer .contacInfo .card p, .card .about .carreras .content .contactContainer .contacInfo p, .carreras .card .about .content .contactContainer .contacInfo p, .card .contactContainer .contacInfo .card .about .carreras .content p, .card .carreras .contactContainer .contacInfo .card .about .content p, .carreras .card .contactContainer .contacInfo .card .about .content p, .about .carreras .content .card .contactContainer .contacInfo p, .carreras .about .content .card .contactContainer .contacInfo p, .card .contactContainer .contacInfo .about .carreras .content .card p, .card .carreras .contactContainer .contacInfo .about .content .card p, .carreras .card .contactContainer .contacInfo .about .content .card p, .card .about .carreras .content .card .contactContainer .contacInfo p, .carreras .card .about .content .card .contactContainer .contacInfo p, .card .contactContainer .contacInfo .card .about .carreras .content .card p, .card .carreras .contactContainer .contacInfo .card .about .content .card p, .carreras .card .contactContainer .contacInfo .card .about .content .card p, .contactContainer .contacInfo .card p, .contactContainer .contacInfo .card .carreras .content p, .carreras .content .contactContainer .contacInfo .card p, .contactContainer .contacInfo .card .about .carreras .content p, .about .carreras .content .contactContainer .contacInfo .card p, .contactContainer .contacInfo .card .carreras .about .content p, .carreras .about .content .contactContainer .contacInfo .card p, .contactContainer .contacInfo .card .carreras .content p, .contactContainer .contacInfo .carreras .content .card p, .carreras .content .contactContainer .contacInfo .card p, .contactContainer .contacInfo .card .about .carreras .content p, .contactContainer .contacInfo .carreras .card .about .content p, .carreras .contactContainer .contacInfo .card .about .content p, .contactContainer .contacInfo .about .carreras .content .card p, .about .carreras .content .contactContainer .contacInfo .card p, .contactContainer .contacInfo .carreras .about .content .card p, .carreras .about .content .contactContainer .contacInfo .card p, .contactContainer .contacInfo .card .about .carreras .content .card p, .contactContainer .contacInfo .carreras .card .about .content .card p, .carreras .contactContainer .contacInfo .card .about .content .card p, .contactContainer .contacInfo .card .carreras .content p, .contactContainer .contacInfo .carreras .content .card p, .carreras .content .contactContainer .contacInfo .card p, .about .carreras .content .contactContainer .contacInfo .card p, .carreras .about .content .contactContainer .contacInfo .card p, .contactContainer .contacInfo .card .about .carreras .content p, .contactContainer .contacInfo .about .carreras .content .card p, .carreras .contactContainer .contacInfo .card .about .content p, .carreras .contactContainer .contacInfo .about .content .card p, .card .contactContainer .contacInfo .card .carreras .content p, .card .contactContainer .contacInfo .carreras .content .card p, .carreras .content .card .contactContainer .contacInfo .card p, .contactContainer .contacInfo .card .carreras .content p, .carreras .content .contactContainer .contacInfo .card p, .card .about .carreras .content .contactContainer .contacInfo .card p, .carreras .card .about .content .contactContainer .contacInfo .card p, .contactContainer .contacInfo .card .about .carreras .content p, .carreras .contactContainer .contacInfo .card .about .content p, .about .carreras .content .card .contactContainer .contacInfo .card p, .carreras .about .content .card .contactContainer .contacInfo .card p, .contactContainer .contacInfo .about .carreras .content .card p, .carreras .contactContainer .contacInfo .about .content .card p, .card .about .carreras .content .card .contactContainer .contacInfo .card p, .carreras .card .about .content .card .contactContainer .contacInfo .card p, .contactContainer .contacInfo .card .about .carreras .content .card p, .carreras .contactContainer .contacInfo .card .about .content .card p, .card .about .content p, .card .about .carreras .content p, .carreras .card .about .content p, .card .about .carreras .content p, .card .carreras .about .content p, .carreras .card .about .content p, .card .about .carreras .content p, .card .carreras .about .content p, .card .about .carreras .content .card p, .carreras .card .about .content .card p, .card .about .carreras .content p, .carreras .card .about .content p, .card .about .carreras .content .card p, .card .carreras .about .content .card p, .carreras .card .about .content .card p, .card .about .carreras .content .card p, .carreras .card .about .content .card p, .card .about .contactContainer .contacInfo .carreras .content p, .contactContainer .contacInfo .carreras .card .about .content p, .card .about .carreras .content .contactContainer .contacInfo p, .carreras .card .about .content .contactContainer .contacInfo p, .card .about .carreras .content .contactContainer .contacInfo p, .card .carreras .about .content .contactContainer .contacInfo p, .carreras .card .about .content .contactContainer .contacInfo p, .card .contactContainer .contacInfo .about .carreras .content p, .contactContainer .contacInfo .card .about .carreras .content p, .card .carreras .contactContainer .contacInfo .about .content p, .carreras .contactContainer .contacInfo .card .about .content p, .card .about .contactContainer .contacInfo .carreras .content p, .card .contactContainer .contacInfo .carreras .about .content p, .card .about .carreras .content .card .contactContainer .contacInfo p, .carreras .card .about .content .card .contactContainer .contacInfo p, .contactContainer .contacInfo .card .about .carreras .content p, .contactContainer .contacInfo .card .carreras .about .content p, .card .about .carreras .content .contactContainer .contacInfo .card p, .carreras .card .about .content .contactContainer .contacInfo .card p, .card .about .carreras .content .contactContainer .contacInfo p, .carreras .card .about .content .contactContainer .contacInfo p, .contactContainer .contacInfo .card .about .carreras .content p, .carreras .contactContainer .contacInfo .card .about .content p, .card .about .carreras .content .card .contactContainer .contacInfo p, .card .carreras .about .content .card .contactContainer .contacInfo p, .carreras .card .about .content .card .contactContainer .contacInfo p, .card .contactContainer .contacInfo .about .carreras .content .card p, .contactContainer .contacInfo .card .about .carreras .content .card p, .card .carreras .contactContainer .contacInfo .about .content .card p, .carreras .contactContainer .contacInfo .card .about .content .card p, .card .about .carreras .content .card .contactContainer .contacInfo p, .carreras .card .about .content .card .contactContainer .contacInfo p, .contactContainer .contacInfo .card .about .carreras .content .card p, .carreras .contactContainer .contacInfo .card .about .content .card p, .about .content .card p, .about .carreras .content .card p, .carreras .about .content .card p, .about .carreras .content .card p, .carreras .about .content .card p, .about .content .card .carreras .content p, .about .carreras .content .card p, .carreras .about .content .card p, .card .about .carreras .content .card p, .carreras .card .about .content .card p, .about .carreras .content .card p, .carreras .about .content .card p, .card .about .carreras .content .card p, .carreras .card .about .content .card p, .about .contactContainer .contacInfo .carreras .content .card p, .contactContainer .contacInfo .carreras .about .content .card p, .about .carreras .content .card .contactContainer .contacInfo p, .carreras .about .content .card .contactContainer .contacInfo p, .about .carreras .content .contactContainer .contacInfo .card p, .carreras .about .content .contactContainer .contacInfo .card p, .about .carreras .content .card .contactContainer .contacInfo p, .about .carreras .content .contactContainer .contacInfo .card p, .carreras .about .content .card .contactContainer .contacInfo p, .carreras .about .content .contactContainer .contacInfo .card p, .contactContainer .contacInfo .about .carreras .content .card p, .carreras .contactContainer .contacInfo .about .content .card p, .about .content .card .contactContainer .contacInfo .carreras .content p, .about .carreras .content .card .contactContainer .contacInfo p, .carreras .about .content .card .contactContainer .contacInfo p, .about .content .contactContainer .contacInfo .card .carreras .content p, .contactContainer .contacInfo .about .content .card .carreras .content p, .about .carreras .content .contactContainer .contacInfo .card p, .carreras .about .content .contactContainer .contacInfo .card p, .card .about .carreras .content .card .contactContainer .contacInfo p, .card .about .carreras .content .contactContainer .contacInfo .card p, .carreras .card .about .content .card .contactContainer .contacInfo p, .carreras .card .about .content .contactContainer .contacInfo .card p, .contactContainer .contacInfo .card .about .carreras .content .card p, .carreras .contactContainer .contacInfo .card .about .content .card p, .about .carreras .content .card .contactContainer .contacInfo p, .carreras .about .content .card .contactContainer .contacInfo p, .contactContainer .contacInfo .about .carreras .content .card p, .carreras .contactContainer .contacInfo .about .content .card p, .card .about .carreras .content .card .contactContainer .contacInfo p, .carreras .card .about .content .card .contactContainer .contacInfo p, .contactContainer .contacInfo .card .about .carreras .content .card p, .carreras .contactContainer .contacInfo .card .about .content .card p {
+    display: none;
+  }
+  .card img {
+    width: 100%;
+    margin-bottom: -0.5rem;
+  }
+  .card h3 {
+    font-size: 1.2em;
+    min-width: 100%;
+    line-height: 100%;
+  }
+}
+@media (max-width: 425px) {
+  .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    border-radius: 16px;
+    max-width: 16rem;
+    max-height: 16rem;
+    margin: 0.5rem 0 0 0;
+  }
+  .card p, .card .carreras .content p, .carreras .content .card p, .card .about .carreras .content p, .about .carreras .content .card p, .card .carreras .about .content p, .carreras .about .content .card p, .card .carreras .content p, .carreras .content .card p, .card .about .carreras .content p, .carreras .card .about .content p, .about .carreras .content .card p, .carreras .about .content .card p, .card .about .carreras .content .card p, .carreras .card .about .content .card p, .card .contactContainer .contacInfo .carreras .content p, .contactContainer .contacInfo .carreras .content .card p, .card .carreras .content .contactContainer .contacInfo p, .carreras .content .contactContainer .contacInfo .card p, .card .about .carreras .content .contactContainer .contacInfo p, .about .carreras .content .contactContainer .contacInfo .card p, .card .carreras .about .content .contactContainer .contacInfo p, .carreras .about .content .contactContainer .contacInfo .card p, .card .contactContainer .contacInfo .about .carreras .content p, .contactContainer .contacInfo .about .carreras .content .card p, .card .carreras .contactContainer .contacInfo .about .content p, .carreras .contactContainer .contacInfo .about .content .card p, .card .contactContainer .contacInfo .carreras .content p, .carreras .content .card .contactContainer .contacInfo p, .contactContainer .contacInfo .card .carreras .content p, .carreras .content .contactContainer .contacInfo .card p, .card .about .carreras .content .contactContainer .contacInfo p, .carreras .card .about .content .contactContainer .contacInfo p, .contactContainer .contacInfo .card .about .carreras .content p, .carreras .contactContainer .contacInfo .card .about .content p, .about .carreras .content .card .contactContainer .contacInfo p, .carreras .about .content .card .contactContainer .contacInfo p, .contactContainer .contacInfo .about .carreras .content .card p, .carreras .contactContainer .contacInfo .about .content .card p, .card .about .carreras .content .card .contactContainer .contacInfo p, .carreras .card .about .content .card .contactContainer .contacInfo p, .contactContainer .contacInfo .card .about .carreras .content .card p, .carreras .contactContainer .contacInfo .card .about .content .card p, .card .contactContainer .contacInfo p, .card .contactContainer .contacInfo .carreras .content p, .carreras .content .card .contactContainer .contacInfo p, .card .contactContainer .contacInfo .about .carreras .content p, .about .carreras .content .card .contactContainer .contacInfo p, .card .contactContainer .contacInfo .carreras .about .content p, .carreras .about .content .card .contactContainer .contacInfo p, .card .contactContainer .contacInfo .carreras .content p, .card .carreras .content .contactContainer .contacInfo p, .carreras .content .card .contactContainer .contacInfo p, .card .contactContainer .contacInfo .about .carreras .content p, .card .about .carreras .content .contactContainer .contacInfo p, .carreras .card .contactContainer .contacInfo .about .content p, .carreras .card .about .content .contactContainer .contacInfo p, .about .carreras .content .card .contactContainer .contacInfo p, .carreras .about .content .card .contactContainer .contacInfo p, .card .contactContainer .contacInfo .about .carreras .content .card p, .card .about .carreras .content .card .contactContainer .contacInfo p, .carreras .card .contactContainer .contacInfo .about .content .card p, .carreras .card .about .content .card .contactContainer .contacInfo p, .card .contactContainer .contacInfo .carreras .content p, .card .carreras .content .contactContainer .contacInfo p, .carreras .content .card .contactContainer .contacInfo p, .card .about .carreras .content .contactContainer .contacInfo p, .about .carreras .content .card .contactContainer .contacInfo p, .card .carreras .about .content .contactContainer .contacInfo p, .carreras .about .content .card .contactContainer .contacInfo p, .card .contactContainer .contacInfo .about .carreras .content p, .card .carreras .contactContainer .contacInfo .about .content p, .carreras .card .contactContainer .contacInfo .about .content p, .card .contactContainer .contacInfo .carreras .content p, .carreras .content .card .contactContainer .contacInfo p, .card .contactContainer .contacInfo .card .carreras .content p, .card .carreras .content .contactContainer .contacInfo .card p, .carreras .content .card .contactContainer .contacInfo .card p, .card .about .carreras .content .contactContainer .contacInfo p, .carreras .card .about .content .contactContainer .contacInfo p, .card .contactContainer .contacInfo .card .about .carreras .content p, .card .carreras .contactContainer .contacInfo .card .about .content p, .carreras .card .contactContainer .contacInfo .card .about .content p, .about .carreras .content .card .contactContainer .contacInfo p, .carreras .about .content .card .contactContainer .contacInfo p, .card .contactContainer .contacInfo .about .carreras .content .card p, .card .carreras .contactContainer .contacInfo .about .content .card p, .carreras .card .contactContainer .contacInfo .about .content .card p, .card .about .carreras .content .card .contactContainer .contacInfo p, .carreras .card .about .content .card .contactContainer .contacInfo p, .card .contactContainer .contacInfo .card .about .carreras .content .card p, .card .carreras .contactContainer .contacInfo .card .about .content .card p, .carreras .card .contactContainer .contacInfo .card .about .content .card p, .contactContainer .contacInfo .card p, .contactContainer .contacInfo .card .carreras .content p, .carreras .content .contactContainer .contacInfo .card p, .contactContainer .contacInfo .card .about .carreras .content p, .about .carreras .content .contactContainer .contacInfo .card p, .contactContainer .contacInfo .card .carreras .about .content p, .carreras .about .content .contactContainer .contacInfo .card p, .contactContainer .contacInfo .card .carreras .content p, .contactContainer .contacInfo .carreras .content .card p, .carreras .content .contactContainer .contacInfo .card p, .contactContainer .contacInfo .card .about .carreras .content p, .contactContainer .contacInfo .carreras .card .about .content p, .carreras .contactContainer .contacInfo .card .about .content p, .contactContainer .contacInfo .about .carreras .content .card p, .about .carreras .content .contactContainer .contacInfo .card p, .contactContainer .contacInfo .carreras .about .content .card p, .carreras .about .content .contactContainer .contacInfo .card p, .contactContainer .contacInfo .card .about .carreras .content .card p, .contactContainer .contacInfo .carreras .card .about .content .card p, .carreras .contactContainer .contacInfo .card .about .content .card p, .contactContainer .contacInfo .card .carreras .content p, .contactContainer .contacInfo .carreras .content .card p, .carreras .content .contactContainer .contacInfo .card p, .about .carreras .content .contactContainer .contacInfo .card p, .carreras .about .content .contactContainer .contacInfo .card p, .contactContainer .contacInfo .card .about .carreras .content p, .contactContainer .contacInfo .about .carreras .content .card p, .carreras .contactContainer .contacInfo .card .about .content p, .carreras .contactContainer .contacInfo .about .content .card p, .card .contactContainer .contacInfo .card .carreras .content p, .card .contactContainer .contacInfo .carreras .content .card p, .carreras .content .card .contactContainer .contacInfo .card p, .contactContainer .contacInfo .card .carreras .content p, .carreras .content .contactContainer .contacInfo .card p, .card .about .carreras .content .contactContainer .contacInfo .card p, .carreras .card .about .content .contactContainer .contacInfo .card p, .contactContainer .contacInfo .card .about .carreras .content p, .carreras .contactContainer .contacInfo .card .about .content p, .about .carreras .content .card .contactContainer .contacInfo .card p, .carreras .about .content .card .contactContainer .contacInfo .card p, .contactContainer .contacInfo .about .carreras .content .card p, .carreras .contactContainer .contacInfo .about .content .card p, .card .about .carreras .content .card .contactContainer .contacInfo .card p, .carreras .card .about .content .card .contactContainer .contacInfo .card p, .contactContainer .contacInfo .card .about .carreras .content .card p, .carreras .contactContainer .contacInfo .card .about .content .card p, .card .about .content p, .card .about .carreras .content p, .carreras .card .about .content p, .card .about .carreras .content p, .card .carreras .about .content p, .carreras .card .about .content p, .card .about .carreras .content p, .card .carreras .about .content p, .card .about .carreras .content .card p, .carreras .card .about .content .card p, .card .about .carreras .content p, .carreras .card .about .content p, .card .about .carreras .content .card p, .card .carreras .about .content .card p, .carreras .card .about .content .card p, .card .about .carreras .content .card p, .carreras .card .about .content .card p, .card .about .contactContainer .contacInfo .carreras .content p, .contactContainer .contacInfo .carreras .card .about .content p, .card .about .carreras .content .contactContainer .contacInfo p, .carreras .card .about .content .contactContainer .contacInfo p, .card .about .carreras .content .contactContainer .contacInfo p, .card .carreras .about .content .contactContainer .contacInfo p, .carreras .card .about .content .contactContainer .contacInfo p, .card .contactContainer .contacInfo .about .carreras .content p, .contactContainer .contacInfo .card .about .carreras .content p, .card .carreras .contactContainer .contacInfo .about .content p, .carreras .contactContainer .contacInfo .card .about .content p, .card .about .contactContainer .contacInfo .carreras .content p, .card .contactContainer .contacInfo .carreras .about .content p, .card .about .carreras .content .card .contactContainer .contacInfo p, .carreras .card .about .content .card .contactContainer .contacInfo p, .contactContainer .contacInfo .card .about .carreras .content p, .contactContainer .contacInfo .card .carreras .about .content p, .card .about .carreras .content .contactContainer .contacInfo .card p, .carreras .card .about .content .contactContainer .contacInfo .card p, .card .about .carreras .content .contactContainer .contacInfo p, .carreras .card .about .content .contactContainer .contacInfo p, .contactContainer .contacInfo .card .about .carreras .content p, .carreras .contactContainer .contacInfo .card .about .content p, .card .about .carreras .content .card .contactContainer .contacInfo p, .card .carreras .about .content .card .contactContainer .contacInfo p, .carreras .card .about .content .card .contactContainer .contacInfo p, .card .contactContainer .contacInfo .about .carreras .content .card p, .contactContainer .contacInfo .card .about .carreras .content .card p, .card .carreras .contactContainer .contacInfo .about .content .card p, .carreras .contactContainer .contacInfo .card .about .content .card p, .card .about .carreras .content .card .contactContainer .contacInfo p, .carreras .card .about .content .card .contactContainer .contacInfo p, .contactContainer .contacInfo .card .about .carreras .content .card p, .carreras .contactContainer .contacInfo .card .about .content .card p, .about .content .card p, .about .carreras .content .card p, .carreras .about .content .card p, .about .carreras .content .card p, .carreras .about .content .card p, .about .content .card .carreras .content p, .about .carreras .content .card p, .carreras .about .content .card p, .card .about .carreras .content .card p, .carreras .card .about .content .card p, .about .carreras .content .card p, .carreras .about .content .card p, .card .about .carreras .content .card p, .carreras .card .about .content .card p, .about .contactContainer .contacInfo .carreras .content .card p, .contactContainer .contacInfo .carreras .about .content .card p, .about .carreras .content .card .contactContainer .contacInfo p, .carreras .about .content .card .contactContainer .contacInfo p, .about .carreras .content .contactContainer .contacInfo .card p, .carreras .about .content .contactContainer .contacInfo .card p, .about .carreras .content .card .contactContainer .contacInfo p, .about .carreras .content .contactContainer .contacInfo .card p, .carreras .about .content .card .contactContainer .contacInfo p, .carreras .about .content .contactContainer .contacInfo .card p, .contactContainer .contacInfo .about .carreras .content .card p, .carreras .contactContainer .contacInfo .about .content .card p, .about .content .card .contactContainer .contacInfo .carreras .content p, .about .carreras .content .card .contactContainer .contacInfo p, .carreras .about .content .card .contactContainer .contacInfo p, .about .content .contactContainer .contacInfo .card .carreras .content p, .contactContainer .contacInfo .about .content .card .carreras .content p, .about .carreras .content .contactContainer .contacInfo .card p, .carreras .about .content .contactContainer .contacInfo .card p, .card .about .carreras .content .card .contactContainer .contacInfo p, .card .about .carreras .content .contactContainer .contacInfo .card p, .carreras .card .about .content .card .contactContainer .contacInfo p, .carreras .card .about .content .contactContainer .contacInfo .card p, .contactContainer .contacInfo .card .about .carreras .content .card p, .carreras .contactContainer .contacInfo .card .about .content .card p, .about .carreras .content .card .contactContainer .contacInfo p, .carreras .about .content .card .contactContainer .contacInfo p, .contactContainer .contacInfo .about .carreras .content .card p, .carreras .contactContainer .contacInfo .about .content .card p, .card .about .carreras .content .card .contactContainer .contacInfo p, .carreras .card .about .content .card .contactContainer .contacInfo p, .contactContainer .contacInfo .card .about .carreras .content .card p, .carreras .contactContainer .contacInfo .card .about .content .card p {
+    display: none;
+  }
+  .card img {
+    width: 60%;
+    margin-bottom: -0.5rem;
+  }
+  .card h3 {
+    font-size: 1.2em;
+    min-width: 100%;
+    line-height: 100%;
+  }
+}
+/* FOOTER */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #AD0BD6;
+  padding: 96px;
+  z-index: 10;
+}
+footer .footerImg {
+  width: 20em;
+}
+footer .footerNavbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  gap: 4.8rem;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: 2rem 0 0 0;
+  width: 30.25rem;
+}
+footer .footerNavbar a {
+  color: #f8f8f8;
+  padding: 0 0 0 0;
+}
+footer .footerNavbar a:hover {
+  color: #f8ec51;
+}
+
+@media (max-width: 426px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #AD0BD6;
+    padding: 96px;
+    z-index: 10;
+  }
+  footer Img {
+    width: 20em;
+  }
+  footer .footerNavbar {
+    display: none;
+  }
+}
+@media (max-width: 321px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #AD0BD6;
+    padding: 40px;
+    z-index: 10;
+  }
+  footer Img {
+    width: 10em;
+  }
+  footer .footerNavbar {
+    display: none;
+  }
+}
+/*   PAGES   */
+.contactUsTitle {
+  margin: 6rem 0 4rem 0;
+  max-width: 60%;
+}
+
+.contactContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: space-between;
+  justify-content: space-evenly;
+  padding: 0px 96px;
+  gap: 1rem;
+  margin: 0 0 -1rem 0;
+  z-index: -1;
+}
+.contactContainer .imageAbsolute {
+  width: 80%;
+  z-index: -2;
+}
+.contactContainer .contacInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 0rem;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  max-width: 30%;
+}
+.contactContainer .contacInfo h2 {
+  text-align: left;
+  margin: 0 0 6rem 0;
+  max-width: 100%;
+}
+.contactContainer .contacInfo p {
+  text-align: right;
+  margin: 0rem 0 2rem 0;
+  max-width: 100%;
+}
+
+.aboutUs {
+  margin: 6rem 0 2rem 0;
+}
+
+.aboutArticle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  gap: 3.5rem;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin: 0 96px;
+}
+.aboutArticle .academy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  gap: 2rem;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 0px 96px;
+}
+.aboutArticle .academy h1, .aboutArticle .academy .aboutUs {
+  text-align: left;
+  margin: 0 0 0 0;
+  max-width: 90%;
+}
+
+.carreras {
+  margin: 4rem 0 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.carreras .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  justify-items: flex-start;
+  margin: 0 0 2rem 0;
+}
+.carreras .content h2 {
+  text-align: left;
+  margin: 0rem 0 1.5rem 0;
+  max-width: 65%;
+}
+.carreras .content p {
+  text-align: left;
+  margin: 0rem 0 1rem 0;
+  max-width: 55%;
+}
+.carreras .cardContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+/*   MEDIA   */
+@media (max-width: 768px) {
+  h2, .contactContainer .contacInfo h2, .carreras .content h2 {
+    text-align: center;
+  }
+  p, .about .content p, .card p, .contactContainer .contacInfo p, .carreras .content p {
+    text-align: center;
+  }
+  .menu {
+    display: block;
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+  }
+  .navbarContainer .navbar {
+    display: none;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    gap: 1rem;
+  }
+  main .hero {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  main .hero .heroConteiner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0%;
+    margin-top: 3rem;
+  }
+  main .hero .heroConteiner .banner {
+    position: absolute;
+    width: 100vw;
+    margin-top: 49rem;
+    z-index: 1;
+  }
+  main .hero .heroConteiner .heroImage {
+    z-index: -2;
+  }
+  main .hero .heroConteiner .heroContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    max-width: 90%;
+  }
+  main .hero .heroConteiner .heroContent h1, main .hero .heroConteiner .heroContent .aboutUs {
+    text-align: center;
+    margin-bottom: 0.5rem;
+    line-height: 115%;
+  }
+  main .hero .heroConteiner .heroContent p {
+    text-align: center;
+    margin: 0.5rem 0 1rem 0;
+    max-width: 390px;
+  }
+  .about {
+    margin-top: 2.5rem;
+    padding: 0;
+  }
+  .about h1, .about .aboutUs, .about .aboutArticle .academy h1, .aboutArticle .academy .about h1, .about .aboutArticle .academy .aboutUs, .aboutArticle .academy .about .aboutUs {
+    font-size: 3.5rem;
+    text-align: center;
+    width: 95%;
+    gap: 1.5rem;
+    line-height: 115%;
+  }
+  .about .content p {
+    text-align: center;
+    width: 90%;
+    font-size: 1rem;
+    gap: 1.5rem;
+  }
+  .about .wrpr img {
+    width: 40%;
+  }
+  .article {
+    flex-direction: column;
+  }
+  .article .articleConteiner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+  }
+  .article .articleConteiner h1, .article .articleConteiner .aboutUs {
+    text-align: center;
+  }
+  .article .articleConteiner p {
+    text-align: center;
+    font-size: 1rem;
+  }
+  .contactContainer .imageAbsolute {
+    display: none;
+  }
+  .carreras {
+    margin: 4rem 0 1rem 0;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 8px;
+  }
+  .carreras .content {
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    margin: 0 0 2rem 0;
+  }
+  .carreras .content h2 {
+    max-width: 100vw;
+  }
+  .carreras .content p {
+    max-width: 100vw;
+  }
+  .carreras .cardContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 0.5fr);
+    grid-template-rows: repeat(3, 0.5fr);
+    gap: 2rem;
+    width: 70%;
+  }
+  .aboutArticle h1, .aboutArticle .aboutUs, .aboutArticle .academy h1, .aboutArticle .academy .aboutUs {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    justify-content: center;
+    text-align: center;
+    line-height: 100%;
+    font-size: 3.5rem;
+    margin: 0 0 1rem;
+  }
+  .aboutArticle p, .aboutArticle .about .content p, .about .content .aboutArticle p, .aboutArticle .contactContainer .contacInfo p, .contactContainer .contacInfo .aboutArticle p, .aboutArticle .carreras .content p, .carreras .content .aboutArticle p {
+    font-size: 1rem;
+    max-width: 80%;
+    align-self: center;
+  }
+  .aboutArticle {
+    flex-direction: column;
+  }
+  .aboutArticle .academy {
+    flex-wrap: wrap;
+    justify-content: center align-items center;
+    flex-direction: column-reverse;
+  }
+  .aboutArticle .academy img {
+    width: 100%;
+  }
+  .aboutArticle .academy .academyContent {
+    display: flex;
+    flex-direction: column;
+  }
+  .aboutArticle .academy .academyContentBottom {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+@media (max-width: 426px) {
+  h1, .about h1, .aboutUs, .about .aboutUs, .aboutArticle .academy h1, .aboutArticle .academy .aboutUs {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    line-height: 115%;
+  }
+  h2, .contactContainer .contacInfo h2, .carreras .content h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    width: 80vw;
+  }
+  p, .about .content p, .card p, .contactContainer .contacInfo p, .carreras .content p {
+    text-align: center;
+    font-size: 1rem;
+    margin: 0.5rem 0 1rem 0;
+    max-width: 100%;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    gap: 1rem;
+  }
+  main .hero {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  main .hero .heroConteiner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0%;
+    margin-top: 3rem;
+  }
+  main .hero .heroConteiner .banner {
+    position: absolute;
+    width: 100vw;
+    margin-top: 24rem;
+    z-index: 1;
+  }
+  main .hero .heroConteiner .heroImage {
+    display: none;
+  }
+  main .hero .heroConteiner .heroContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    max-width: 90%;
+  }
+  main .hero .heroConteiner .heroContent h1, main .hero .heroConteiner .heroContent .aboutUs {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    line-height: 115%;
+  }
+  main .hero .heroConteiner .heroContent p {
+    text-align: center;
+    font-size: 1rem;
+    margin: 0.5rem 0 1rem 0;
+    max-width: 390px;
+  }
+  main .hero .heroConteiner .heroContent .buttonConteiner {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 0.5rem;
+    max-width: 80%;
+  }
+  .about {
+    margin: 1.5rem 0 0 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+  }
+  .about .content {
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    max-width: none;
+  }
+  .about .content p {
+    padding: 0 0 0 6rem;
+    text-align: center;
+    width: 100vw;
+    font-size: 1rem;
+  }
+  .about .wrpr {
+    margin: 2rem;
+  }
+  .about .wrpr img {
+    width: 40%;
+  }
+  .article {
+    flex-direction: column;
+    padding: 16px;
+    gap: 4rem;
+  }
+  .article .articleConteiner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100vw;
+  }
+  .article .articleImage {
+    justify-content: center;
+    align-items: center;
+  }
+  .article .articleImage img {
+    width: 100%;
+  }
+  .carreras {
+    margin: 4rem 0 1rem 0;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 8px;
+  }
+  .carreras .content {
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    margin: 0 0 2rem 0;
+  }
+  .carreras .content h2 {
+    max-width: 100vw;
+  }
+  .carreras .content p {
+    max-width: 100vw;
+  }
+  .carreras .cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    width: 70%;
+  }
+}
+@media (max-width: 321px) {
+  h1, .about h1, .aboutUs, .about .aboutUs, .aboutArticle .academy h1, .aboutArticle .academy .aboutUs {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    line-height: 115%;
+  }
+  p, .about .content p, .card p, .contactContainer .contacInfo p, .carreras .content p {
+    text-align: center;
+    font-size: 0.8rem;
+    margin: 0.5rem 0 1rem 0;
+    max-width: 80%;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    gap: 1rem;
+  }
+  main .hero {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  main .hero .heroConteiner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0%;
+    margin-top: 3rem;
+  }
+  main .hero .heroConteiner .banner {
+    position: absolute;
+    width: 100vw;
+    margin-top: 24rem;
+    z-index: 1;
+  }
+  main .hero .heroConteiner .heroImage {
+    display: none;
+  }
+  main .hero .heroConteiner .heroContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    max-width: 90%;
+  }
+  main .hero .heroConteiner .heroContent h1, main .hero .heroConteiner .heroContent .aboutUs {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    line-height: 115%;
+  }
+  main .hero .heroConteiner .heroContent p {
+    text-align: center;
+    font-size: 1rem;
+    margin: 0.5rem 0 1rem 0;
+    max-width: 390px;
+  }
+  main .hero .heroConteiner .heroContent .buttonConteiner {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-width: 80%;
+  }
+  .about {
+    margin: 1.5rem 0 0 0;
+    align-items: center;
+    justify-content: center;
+  }
+  .about .content {
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 100vw;
+    max-width: none;
+  }
+  .about .content p {
+    padding: 0 0 0 6rem;
+    text-align: center;
+    width: 100vw;
+    font-size: 1rem;
+  }
+  .about .wrpr {
+    margin: 2rem;
+  }
+  .about .wrpr img {
+    width: 40%;
+  }
+  .article {
+    flex-direction: column;
+    padding: 16px;
+    gap: 4rem;
+  }
+  .article .articleConteiner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 80vw;
+  }
+  .article .articleImage {
+    justify-content: center;
+    align-items: center;
+  }
+  .article .articleImage img {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

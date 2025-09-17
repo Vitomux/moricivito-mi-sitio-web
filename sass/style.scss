@@ -1,0 +1,62 @@
+
+
+/*     UTILITIES   */
+
+@import "./utilities/_maps.scss";
+@import "./utilities/_mixins.scss";
+
+
+
+
+//-----------------------------------
+
+/*   BASE   */
+
+@import "./base/_reset.scss";
+@import "./base/_tipographies.scss";
+
+
+
+
+//-----------------------------------
+
+/*   LAYOUT   */
+
+@import "./layout/_header.scss";
+@import "./layout/_main.scss";
+
+
+
+
+//-----------------------------------
+
+/*   COMPONENTS   */
+
+@import "./components/_button.scss";
+@import "./components/_form.scss";
+@import "./components/_card.scss";
+
+
+
+
+//-----------------------------------
+
+/* FOOTER */
+
+@import "./layout/_footer.scss";
+
+//-----------------------------------
+/*   PAGES   */
+
+@import "./layout/pages/_contact.scss";
+@import "./layout/pages/_about.scss";
+@import "./layout/pages/_services.scss";
+
+//-----------------------------------
+
+/*   MEDIA   */
+
+@import "./layout/media/_768.scss";
+@import "./layout/media/425.scss";
+@import "./layout/media/320.scss";
+

@@ -1,0 +1,49 @@
+form {
+    @include flex(center, left, left, 1.5rem, column, nowrap);
+    margin: 2rem 0 -4rem 0;
+    padding: 0;
+    width: 100%;
+
+    label {
+        @include flex(left, left, left, .5rem, column, nowrap);
+        width: 100% 
+    };
+    input, textarea {
+        width: 100%;
+        height: 2rem
+    }
+
+        .buttonPrimary {
+            @extend .buttonPrimary;
+            width: 100%;
+            height: 2.5rem;
+            margin-top: 1rem;
+            border-radius: 0px;
+    }
+}
+
+@media (max-width: 768px){
+    form {
+    @include flex(center, center, center, 1.5rem, column, wrap);
+    margin: 2rem 0 4rem 0;
+    padding: 0;
+    width: 100%;
+
+    label {
+        @include flex(center, center, center, .5rem, column, wrap);
+        width: 100% 
+    };
+    input, textarea {
+        width: 100%;
+        height: 2rem
+    }
+
+        .buttonPrimary {
+            @extend .buttonPrimary;
+            width: 100%;
+            height: 2.5rem;
+            margin-top: 1rem;
+            border-radius: 0px;
+    }
+}
+}
