@@ -1,0 +1,45 @@
+button {
+    background-color: map-get($color, brand);
+    color: map-get($color, primary );
+    font-family: "lexend", sans-serif;
+    border-color: map-get($color , brand);
+    border-radius: 16px;
+    padding: 8px 16px;
+    width: 185px;
+
+    &:hover {
+        background-color: map-get($color, accent);
+        color: map-get($color, brand);
+        border: 2px solid map-get($color, brand);
+        cursor: pointer;
+        transition: all 0.2s ease-in;
+    }
+    a{
+        @include font('Lexend', map-get($fontSize, xsml), medium, map-get($color, primary));
+        text-decoration: none;
+    }
+}
+
+.buttonSecondary {
+    @extend button;
+    background-color: map-get($color, primary);
+    color: map-get($color, brand);
+}
+
+@media (max-width : 321px) {
+
+    button {
+    background-color: map-get($color, brand);
+    color: map-get($color, primary );
+    font-family: "lexend", sans-serif;
+    border-color: map-get($color , brand);
+    border-radius: 0px;
+    padding: 8px 12px;
+    width: 13rem;
+}
+    .buttonSecondary {
+        @extend button;
+        background-color: map-get($color, primary);
+        color: map-get($color, brand);
+}
+}

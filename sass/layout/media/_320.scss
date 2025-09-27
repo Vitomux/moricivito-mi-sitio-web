@@ -1,0 +1,134 @@
+@media (max-width: 321px) {
+
+    h1 {
+        font-size: 1.8rem;
+        text-align: center;
+        margin-bottom: .5rem;
+        line-height: 115%
+    }
+    p {
+            text-align: center;
+            font-size: .8rem;
+            margin: 0.5rem 0 1rem 0;
+            max-width: 80%;
+    }
+    
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+            gap: 1rem;
+            
+            .hero {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 1rem;
+    
+                
+                .heroConteiner{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 0%;
+                    margin-top: 3rem;
+    
+                    .banner {
+                            position: absolute;
+                            width: 100vw;
+                            margin-top:24rem;
+                            z-index: 1;
+                        }
+                        
+                        .heroImage {
+                            display: none;
+                        }
+    
+                        .heroContent {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                            gap: 1rem;
+                            max-width: 90%;
+            
+                            h1 {
+                                font-size: 2rem;
+                                text-align: center;
+                                margin-bottom: .5rem;
+                                line-height: 115%
+                            }
+                            p {
+                                text-align: center;
+                                font-size: 1rem;
+                                margin: 0.5rem 0 1rem 0;
+                                max-width: 390px;
+                            }
+    
+                            .buttonConteiner{
+                                display: flex;
+                                flex-direction: column;
+                                gap: .5rem;
+                                max-width: 80%;
+                            }
+                        }
+                    }       
+            }
+        }
+        .about {
+            margin: 1.5rem 0 0 0;
+            align-items: center;
+            justify-content: center;
+    
+            .content {
+                justify-content: center;
+                align-items: center;
+                margin: 0;
+                width: 100vw;
+                max-width: none;
+                p{
+                    padding: 0 0 0 6rem;
+                    text-align: center;
+                    width: 100vw;
+                    font-size: 1rem;
+                }
+            }
+    
+            .wrpr {
+                margin: 2rem;
+                img {
+                        width: 40%;
+                }
+            }
+        }
+    
+    
+        .article {
+            flex-direction: column;
+            padding: 16px;
+            gap: 4rem;
+    
+            .articleConteiner {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+                width: 80vw;
+            }
+    
+            .articleImage {
+                justify-content: center;
+                align-items: center;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+}
+
+
+

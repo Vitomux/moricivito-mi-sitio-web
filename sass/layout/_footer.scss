@@ -1,0 +1,71 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: map-get($color, brand);
+    padding: 96px;
+    z-index: 10;
+
+    .footerImg {
+        width: 20em;
+    }
+
+    .footerNavbar {
+        @include flex(space-between, center, center, 4.8rem, row, nowrap);
+        margin: 2rem 0 0 0;
+        width: 30.25rem;
+
+        a {
+            @extend a;
+            color: map-get($color, primary);
+            padding: 0 0 0 0;
+            &:hover {
+                color: map-get($color, accent);
+            }
+        }
+
+    }
+}
+
+@media (max-width: 426px) {
+    footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: map-get($color, brand);
+    padding: 96px;
+    z-index: 10;
+
+    Img {
+        width: 20em;
+    }
+
+    .footerNavbar {
+    display: none;
+    }
+}
+}
+
+@media (max-width: 
+321px) {
+    footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: map-get($color, brand);
+    padding: 40px;
+    z-index: 10;
+
+    Img {
+        width: 10em;
+    }
+
+    .footerNavbar {
+    display: none;
+    }
+}
+
+}

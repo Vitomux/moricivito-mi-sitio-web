@@ -1,0 +1,58 @@
+.mainHeader {
+    @include flex(space-between, center, center, flex-end, row, nowrap);
+    background-color: map-get($color, primary);
+    width: 100%;
+    padding: .5rem 2rem;
+    z-index: 20;
+    position: fixed;
+    box-shadow: 0px 4px 4px rgba(71, 69, 71, 0.248);
+
+        .navbarContainer {
+            @include flex(flex-end, center,auto, auto, row, nowrap);
+
+            .navbar {
+                @include flex(space-between, right,center, 2rem, row, nowrap);
+                padding-right: 0px;
+                width: 100%;
+            }
+
+        }
+        .menu {
+            display: none;
+        }
+
+@media (max-width: 768px) {
+    button {
+        display: none;
+    }
+    .menu {
+                display: block;
+                width: 2.5rem;
+                height: 2.5rem;
+                cursor: pointer;
+            }
+.navbarContainer {
+    .navbar {
+        display: none;
+    }
+            
+        }
+    }
+}
+
+@media (max-width: 426px) {
+
+    .mainHeader {
+        max-width: 100vw;
+    }
+        .navbarContainer {
+            .menu {
+                display: block;
+                width: 2rem;
+                cursor: pointer;
+            }
+            .navbar {
+                display: none;
+            }
+        }
+    }
