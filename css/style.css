@@ -920,11 +920,11 @@ footer .footerNavbar a:hover {
   main .hero .heroConteiner .banner {
     position: absolute;
     width: 100vw;
-    margin-top: 24rem;
+    margin-top: 30rem;
     z-index: 1;
   }
   main .hero .heroConteiner .heroImage {
-    display: none;
+    width: 20rem;
   }
   main .hero .heroConteiner .heroContent {
     display: flex;
@@ -1065,11 +1065,11 @@ footer .footerNavbar a:hover {
   main .hero .heroConteiner .banner {
     position: absolute;
     width: 100vw;
-    margin-top: 24rem;
+    margin-top: 32rem;
     z-index: 1;
   }
   main .hero .heroConteiner .heroImage {
-    display: none;
+    width: 18rem;
   }
   main .hero .heroConteiner .heroContent {
     display: flex;
